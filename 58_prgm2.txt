@@ -1,9 +1,41 @@
-create table department(dno int PRIMARY KEY,dname varchar(20),location varchar(50));
-create table employee(empno int PRIMARY KEY,name varchar(20),gender char(1),salary int,email VARCHAR(30),dno int,FOREIGN KEY(dno) REFERENCES department(dno));
-insert into department values((10,'HR','block A'),(20,'sales','block B'),(30,'IT','block C'),(40,'Administration','BLOCK D'),(50,'Finance','Block E');
-insert into employee values(1,'alice','F',30000,'alice@gmail.com',10),(2,'bob','M',40000,'bob@gmail.com',20),(3,'charlie','M',45000,'charlie@gmail.com',30),(4,'david','M',35000,'david@gmail.com',40),(5,'suzanne','F',50000,'suzanne@gmail.com',50);
-update employee set salary=salary*1.10;
-update department set location='BLOCK G' where dname='Sales';
-delete from employee where salary <35000;
-update employee set salary=salary+5000 where dno=30 and salary<50000;
+-- 
+-- Roll No: 58
+-- Name: Suhaila nasreen c
+-- Program: Practice Questions - 2
+-- 
 
+
+--
+-- Table structure for table department
+--
+
+create table department(dno int PRIMARY KEY,dname varchar(20),location varchar(50));
+
+--
+-- Table structure for table employee
+--
+
+create table employee(empno int PRIMARY KEY,name varchar(20),gender char(1),salary int,email VARCHAR(30),dno int,FOREIGN KEY(dno) REFERENCES department(dno));
+
+
+
+--
+-- Dumping data for table department
+--
+
+-- insert into department values((10,'HR','block A'),(20,'sales','block B'),(30,'IT','block C'),(40,'Administration','BLOCK D'),(50,'Finance','Block E');
+
+--update department set location='BLOCK G' where dname='Sales';
+-- Dumping data for table employee
+--
+
+-- insert into employee values(1,'alice','F',30000,'alice@gmail.com',10),(2,'bob','M',40000,'bob@gmail.com',20),(3,'charlie','M',45000,'charlie@gmail.com',30),(4,'david','M',35000,'david@gmail.com',40),(5,'suzanne','F',50000,'suzanne@gmail.com',50);
+
+--update employee set salary=salary*1.10;
+--update employee set salary=salary+5000 where dno=30 and salary<50000;
+--delete from employee where salary <35000;
+-- SQl Query Statements
+--
+
+-- -----SQL query statments preceeded by the its question-------- # This line may be removed in the actual file
+-- -----Question number should be commented---------------#This line may be removed in the actual file
